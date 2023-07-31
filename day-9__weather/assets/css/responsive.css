@@ -1,0 +1,36 @@
+/* Pc */
+@media (min-width: 64em) {
+    .submit {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .weather__input {
+        width: calc(100% - 56px);
+        border-top-right-radius: 0 ;
+    }
+    .weather__input:focus {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: #fff;
+    }
+}
+
+/* Mobile */
+@media (max-width:46.1875em) {
+    .weather__input {
+        width: calc(100% - 56px);
+        border-top-right-radius: 0 ;
+    }
+    .weather__input:focus {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: #fff;
+    }
+}

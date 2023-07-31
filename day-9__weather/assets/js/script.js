@@ -52,4 +52,9 @@ search.addEventListener("keypress", function (e) {
   }
 });
 
+document.querySelector('.submit').addEventListener('click',function(e){
+        changeWeatherUI(search.value.trim());
+        search.value = '';
+})
+
 changeWeatherUI("ha noi");
