@@ -1,0 +1,28 @@
+/* Pc */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .todo{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .todo__list li i {
+        opacity: 1 !important;
+    }
+}
+
+/* Mobile */
+@media (max-width:46.1875em) {
+    .todo{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .todo__list li i {
+        opacity: 1 !important;
+    }
+}

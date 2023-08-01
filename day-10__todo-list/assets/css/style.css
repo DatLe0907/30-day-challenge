@@ -56,6 +56,10 @@ body {
   cursor: pointer;
 }
 
+.todo__add-btn:hover {
+    opacity: 0.7;
+}
+
 .todo__list {
   padding-left: 0;
   list-style: none;
@@ -69,7 +73,7 @@ body {
   align-items: center;
   font-size: 2.2rem;
   border-bottom: 1px solid rgba(171, 171, 171, 0.3);
-  cursor: pointer;
+
 }
 
 .todo__list li:hover i {
@@ -86,6 +90,7 @@ body {
 .todo__list li i {
   color: #ccc;
   opacity: 0;
+  cursor: pointer;
 }
 
 .todo__list li.completed span {
