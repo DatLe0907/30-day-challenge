@@ -27,6 +27,7 @@ body {
 }
 
 .todo form {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -45,6 +46,10 @@ body {
 }
 
 .todo__add-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
   background-color: var(--primary-color);
   padding: 5px 15px;
   color: #fff;
