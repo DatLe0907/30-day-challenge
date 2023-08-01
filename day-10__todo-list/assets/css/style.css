@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #9ACD32;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(to right, #FEE000, var(--primary-color));
+    display: flex;
+    justify-content: center;
+}
+
+.todo{
+    background-color: #fff;
+    width: 400px;
+    margin-top: 100px;
+    border-radius: 6px;
+}
+
+.todo form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #aaa;
+    font-size: 2.2rem;
+
+}
+
+.todo__add-input{
+    flex: 1;
+    font-size: 2.2rem;
+    outline: none;
+    border: none;
+    color: #444;
+    padding-right: 10px;
+}
+
+.todo__add-btn{
+    background-color: var(--primary-color);
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.todo__list{
+    padding-left: 0;
+    list-style: none;
+}
+
+.todo__list li {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.2rem;
+    border-bottom: 1px solid rgba(171, 171, 171,0.3);
+}
+
+.todo__list li:hover i {
+    display: block;
+}
+
+.todo__list li span {
+    display: flex;
+    flex-wrap: wrap;
+    color: #444;
+    width: 100%;
+
+}
+
+.todo__list li i {
+    color: #ccc;
+    display: none;
+}
+
+.todo__list li.completed span {
+    color: #aaa;
+    text-decoration: line-through;
+}
