@@ -40,7 +40,7 @@ body{
 
 .cool .weather{
     background: url(../img/cool.jpg) ;
-    background-size: cover;
+
 }
 
 .cold {
@@ -61,6 +61,7 @@ body{
     border-radius: 10px;
     transition: 0.5s;
     position: relative;
+    background-size: cover;
 }
 
 .submit {

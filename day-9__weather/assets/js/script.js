@@ -31,10 +31,10 @@ async function changeWeatherUI(input) {
     sun.innerHTML = data.main.humidity + "m";
 
     body.setAttribute("class", "hot");
-    if (temp <= 25) {
+    if (temp <= 30) {
       body.setAttribute("class", "warm");
     }
-    if (temp <= 22) {
+    if (temp <= 25) {
       body.setAttribute("class", "cool");
     }
     if (temp <= 19) {
