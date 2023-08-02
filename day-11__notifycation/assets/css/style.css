@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+:root {
+    --success: #008000;
+    --error: #FF0000;
+    --warning: #FFA500;
+
+    --success-light: rgba(0, 128, 0, 0.4);
+    --error-light: rgba(255, 0, 0, 0.4);
+    --warning-light: rgba(255, 165, 0, 0.4);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #ECF0F1;
+    overflow: hidden;
+}
+
+.control button {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.control button:hover {
+    opacity: 0.7;
+}
+
+.control .control__success {
+    background-color: var(--success);
+}
+
+.control .control__error {
+    background-color: var(--error);
+}
+
+.control .control__warning {
+    background-color: var(--warning);
+}
+
+#toasts {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.toast {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-size: 1.6rem;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    border-left: 4px solid;
+    animation: slide-show 2s ease forwards;
+}
+
+@keyframes countdown {
+    from{
+        width: 100%
+    }
+    to{
+        width: 0%;
+    }
+}
+
+@keyframes slide-show {
+    0% {
+        transform: translateX(100%);
+    }
+    25%{
+        transform: translateX(-10%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes slide-hide {
+    0% {
+        transform: translateX(-10%);
+    }
+    25%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(200%);
+    }
+}
+
+.toast::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(100% - 3px);
+    right: 0;
+    width: 100%;
+    height: 3px;
+    animation: countdown 3s linear forwards;
+}
+
+.toast.error::after {
+    background-color: var(--error)
+}
+
+.toast.success::after {
+    background-color: var(--success)
+}
+
+.toast.warning::after {
+    background-color: var(--warning)
+}
+
+.toast span {
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.toast i {
+    font-size: 2.4rem;
+}
+
+.toast.success{
+    background-color: var(--success-light);
+    border-left-color: var(--success);
+}
+
+.toast.error{
+    background-color: var(--error-light);
+    border-left-color: var(--error);
+}
+
+.toast.warning{
+    background-color: var(--warning-light);
+    border-left-color: var(--warning);
+}
+
+
