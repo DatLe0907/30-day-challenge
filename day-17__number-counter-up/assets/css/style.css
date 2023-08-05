@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #8a66b4;
+}
+
+.counter {
+    padding: 20px 40px;
+    background-color: #6b38b6;
+    color: #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.counter p {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0 0 15px 0;
+}
+
+.counter span {
+    display: block;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+}
+

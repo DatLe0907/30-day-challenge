@@ -42,7 +42,7 @@ body {
   outline: none;
   border: none;
   color: #444;
-  padding-right: 10px;
+  padding-right: 90px;
 }
 
 .todo__add-btn {
@@ -86,10 +86,9 @@ body {
 }
 
 .todo__list li span {
-  display: flex;
-  flex-wrap: wrap;
+  overflow-wrap: break-word;
   color: #444;
-  width: 100%;
+  width: 90%;
 }
 
 .todo__list li i {

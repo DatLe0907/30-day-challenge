@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #dadada;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  height: 585px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container header {
+  padding: 0 18px;
+}
+
+.container h4 {
+  padding: 25px 0;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.search {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.search i {
+  padding: 10px 0 10px 10px;
+  color: var(--text-color);
+  height: 100%;
+  border: none;
+  background-color: #fff;
+  position: relative;
+  top: 2px
+}
+
+.search input {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 8px 10px;
+  flex: 1;
+  color: var(--text-color);
+}
+
+.product-list {
+  margin-bottom: 25px;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.product-list .loading {
+  display: block;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+.product-item {
+  margin-bottom: 10px;
+  padding: 8px 20px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.product-item a {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+}
+
+.product-item:hover {
+  background-color: #ddd;
+}
+
+.product-item img {
+  width: 50px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.product-info {
+  width: 100%;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-weight: 600;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ 
+}
+
+.cost {
+  text-align: left;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.hide {
+    display: none;
+}

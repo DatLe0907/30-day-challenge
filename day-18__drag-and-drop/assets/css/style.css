@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(145deg, #a4508b, #5f0a87);
+}
+
+.box {
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border: 3px solid #000;
+    margin: 0 10px;
+}
+
+.box__target {
+    display: block;
+    background-image: url(	https://www.nodemy.vn/projects/html-css-js/drag-and-drop/bg.jpeg);
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.drag-img {
+    cursor: pointer;
+    border: 3px solid #Fff;
+}
+
+
+
